@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Links to style sheets -->
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media-375px.css" media="(max-width:375px)">
+  <link rel="stylesheet" href="style/all.min.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <!-- Rating state start -->
+  <div class="container">
+    <div class="box-rating">
+      <div class="imge"><img src="images/icon-star.svg" alt=""></div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="rating">
+        <div class="number">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+        <div class="number">5</div>
+      </div>
+      <form action="thanks-message.html" onsubmit="return validate()">
+        <button>Submit</button>
+      </form>
+    </div>
+  </div>
+  <!-- Rating state end -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script/script.js"></script>
+  <script src="script/all.min.js"></script>
+</body>
+
+</html>

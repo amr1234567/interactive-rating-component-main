@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Links to style sheets -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-375px.css" media="(max-width:375px)">
+    <link rel="stylesheet" href="style/all.min.css">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+    <!-- Rating state start -->
+    <div class="container">
+        <div class="box-thanks">
+            <!-- Thank you state start -->
+            <img src="images/illustration-thank-you.svg" alt="">
+            <div class="selcted">
+                You selected&nbsp;<span></span>&nbsp;out of 5
+            </div>
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!</p>
+        </div>
+    </div>
+    <!-- Thank you state end -->
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script>
+        let valueInThanksPage = localStorage.getItem('myValue');
+        let num = document.querySelector('span');
+        console.log(num);
+        num.textContent = valueInThanksPage;
+    </script>
+    <script src="script/all.min.js"></script>
+</body>
+
+</html>
